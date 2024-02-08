@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Hotel Kocela</title>
-</head>
+<?php Require_once("inc/header.php")  ;?>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Hotel Kocela</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Hom</a>
-            <a href="#about">About</a>
-            <a href="#services">services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <?php Require_once("inc/nav.php") ;?>
     <section class="home" id="home">
         <div class="home-content">
             <h1>Welcome to Hotel Kocela!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <p>Make yourself  at home, we are happy to see you.</p>
                 </p>
+
+            <a href="reserv.php" class="btn">Book Now</a>
+
             <div class="social-media">
                 <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
                 <a href="#"><i class='bx bxs-phone' ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                
             </div>
         </div>
     </section>
@@ -37,7 +24,7 @@
             <h2 class="heading">About Us</h2>
             <h3>Lovely and peaceful environment for a restful night</h3>
             <p>the best of the best</p>
-            <a href="#" class="btn">Read more.</a>
+            <a href="about.php" class="btn">Read more.</a>
         </div>
     </section>
     
@@ -56,16 +43,4 @@
             <input type="submit" value="Send Message" class="btn">
         </form>
 
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 by Akkorir|All Rights Reserved</p>
-            </div>
-            <div class="footer-iconTop">
-                <a href="#home"></a>
-            </div>
-        </footer>
-
-
-    </section>
-</body>
-</html>
+        <?php Require_once("inc/footer.php")  ;?>
